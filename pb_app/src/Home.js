@@ -3,6 +3,8 @@ import pb from "lib/pocketbase";
 import {useForm} from "react-hook-form";
 import HomeNavBar from "HomeNavBar";
 
+var post_key = localStorage.getItem("post_key");
+
 export default function Home() {
     const {register, handleSubmit, reset} = useForm();
     const logout = useLogout();

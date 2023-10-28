@@ -15,7 +15,7 @@ export default function CreateAccount() {
             <html>
             <head>
                 <title>Create Account</title>
-                <link rel="stylesheet" href="createAccount.css"></link>
+                <link rel="stylesheet" href="createacc.css"></link>
             </head>
             <body>
                 <div class="createacc-container">
