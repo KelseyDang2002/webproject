@@ -1,12 +1,11 @@
 import NavBar from "NavBar";
 import Home from "Home";
-import useLogout from "hooks/useLogout";
 import useLogin from "hooks/useLogin";
 import pb from "lib/pocketbase";
 import {useForm} from "react-hook-form";
+import "stylesheets/login.css";
 
 export default function Login() {
-    const logout = useLogout();
     const {mutate: login, isLoading, isError} = useLogin();
     const {register, handleSubmit, reset} = useForm();
 
@@ -35,14 +34,14 @@ export default function Login() {
                 <div class="login-container">
                     <NavBar/>
                     <div class="login-form-box">
-                        <h1>Login with Email/User</h1>
+                        <h1>Login</h1>
                         {isLoading && <p>Loading...</p>}
                         {isError && <p style={{color: "red"}}>Invalid email or password</p>}
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div class="login-input-group">
                                 <div class="login-input-field">
-                                    <label>Email or Username:</label><br/>
-                                    <input type="text" placeholder="Email/Username" {...register("email")} />
+                                    <label>Username:</label><br/>
+                                    <input type="text" placeholder="Username" {...register("email")} />
                                 </div>
 
                                 <div class="login-input-field">

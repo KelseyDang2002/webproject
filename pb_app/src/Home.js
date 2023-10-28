@@ -1,12 +1,10 @@
 import useLogout from "hooks/useLogout";
 import pb from "lib/pocketbase";
-import {useForm} from "react-hook-form";
 import HomeNavBar from "HomeNavBar";
-
-var post_key = localStorage.getItem("post_key");
+import SearchCate from "SearchCate";
+import "stylesheets/home.css";
 
 export default function Home() {
-    const {register, handleSubmit, reset} = useForm();
     const logout = useLogout();
 
     const isLoggedIn = pb.authStore.isValid;
@@ -22,7 +20,7 @@ export default function Home() {
                         <div className="home-container">
                             <HomeNavBar/>
                             <div className="home-form-box">
-                                <h1>Home</h1>
+                                <h1>Welcome, {pb.authStore.model.username}.</h1>
                                 <div class="home-button">
                                     <a href="Login.js" onClick={logout}>Logout</a>
                                 </div>

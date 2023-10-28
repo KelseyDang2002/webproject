@@ -65,14 +65,14 @@ export default function CreatePost() {
                                     </div>
 
                                     <div className="createpost-input-field">
-                                        <input type="text" id="comment_text" 
-                                            placeholder="Comment Text"
-                                            {...register("comment_text")}>
+                                        <input type="text" id="comment_text_q" 
+                                            placeholder="Post Contents"
+                                            {...register("comment_text_q")}>
                                         </input>
                                     </div>
 
                                     <div className="createpost-button">
-                                        <button type="submit" id="create_button">Create Post</button>
+                                        <button type="submit" id="create_button">Post</button>
                                     </div>
                                 </div>
                             </form>

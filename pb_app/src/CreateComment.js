@@ -35,7 +35,7 @@ export default function CreateComment() {
                 filter: `post_key = "${post_key}"`,
             });
 
-            const post_title = post[0].title;
+            const post_title = post[0].post_text;
 
             var parent_container = document.getElementById("parent_container");
 

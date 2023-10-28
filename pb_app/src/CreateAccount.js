@@ -1,6 +1,7 @@
 import NavBar from "NavBar";
 import useCreateAcc from "hooks/useCreateAcc";
 import {useForm} from "react-hook-form";
+import "stylesheets/createacc.css";
 
 export default function CreateAccount() {
     const {mutate: createAcc, isLoading, isError} = useCreateAcc();
@@ -42,7 +43,7 @@ export default function CreateAccount() {
                                 </div>
 
                                 <div class="createacc-input-field">
-                                    <label>Confirm Password:</label><br/>
+                                    <label>Confirm:</label><br/>
                                     <input type="password" id="passwordConfirm" placeholder="Confirm Password" {...register("passwordConfirm")} />
                                 </div>
                             </div>
