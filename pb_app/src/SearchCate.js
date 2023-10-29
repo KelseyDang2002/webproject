@@ -1,6 +1,7 @@
 import pb from "lib/pocketbase.js";
 import {useForm} from "react-hook-form";
 import HomeNavBar from "HomeNavBar";
+import "stylesheets/searchcate.css";
 
 export default function SearchCate() {
     const {register, handleSubmit, reset} = useForm();
@@ -42,9 +43,9 @@ export default function SearchCate() {
                 </head>
                 <body>
                     <div className="searchcate-container">
-                        <HomeNavBar/>
+                        {/* <HomeNavBar/> */}
                         <div className="searchcate-form-box">
-                            <h1>Search Category</h1>
+                            <h1>Category Search</h1>
                             <form onSubmit={handleSubmit(search_button)}>
                                 <div className="searchcate-input-group">
                                     <div className="searchcate-input-field">

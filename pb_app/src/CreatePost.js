@@ -1,6 +1,7 @@
 import pb from "lib/pocketbase.js";
 import {useForm} from "react-hook-form";
 import HomeNavBar from "HomeNavBar";
+import "stylesheets/createpost.css";
 
 var category_key = localStorage.getItem("category_key");
 

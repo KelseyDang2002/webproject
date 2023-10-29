@@ -1,6 +1,7 @@
 import pb from "lib/pocketbase.js";
 import {useForm} from "react-hook-form";
 import HomeNavBar from "HomeNavBar";
+import "stylesheets/createcate.css";
 
 export default function CreateCate() {
     const {register, handleSubmit, reset} = useForm();
@@ -56,7 +57,7 @@ export default function CreateCate() {
                                     </div>
 
                                     <div className="createcate-button">
-                                        <button type="submit" id="create_button">Create Category</button>
+                                        <button type="submit" id="create_button">Create</button>
                                     </div>
                                 </div>
                             </form>

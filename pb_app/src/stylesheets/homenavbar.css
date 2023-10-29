@@ -22,7 +22,7 @@ li a {
 }
 
 li a:hover {
-    color: #ffffff;
-    background-color: #4A00E0;
+    color: #949bcf;
+    background-color: #000b2b;
     cursor: pointer;
 }

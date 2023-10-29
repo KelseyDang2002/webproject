@@ -1,5 +1,6 @@
 import pb from "lib/pocketbase.js";
 import HomeNavBar from "HomeNavBar";
+import "stylesheets/viewcate.css";
 
 var category_key = localStorage.getItem("category_key");
 
@@ -62,6 +63,7 @@ export default function ViewCate() {
                         <div className="viewcate-form-box">
                             <h1>View Categories</h1>
                             <div className="parent_container" id="parent_container"></div>
+                            
                             <div className="viewcate-button">
                                 <button id="create_post_button" onClick={create_post_button.bind(this)}>Create Post</button>
                             </div>

@@ -1,6 +1,7 @@
 import pb from "lib/pocketbase.js";
 import {useForm} from 'react-hook-form';
 import HomeNavBar from "HomeNavBar";
+import "stylesheets/createcom.css";
 
 var post_key = localStorage.getItem('post_key');
 
@@ -49,7 +50,7 @@ export default function CreateComment() {
 
             var asker_username = document.createElement("p");
             asker_username.setAttribute("className", "username_text");
-            asker_username.innerHTML = "Asked by: " + comment[0].username;
+            asker_username.innerText = "Asked by: " + comment[0].username;
 
             var question = document.createElement("p");
             question.innerText = comment[0].comment_text;
@@ -91,12 +92,12 @@ export default function CreateComment() {
                             <form onSubmit={handleSubmit(create_comment_button)}>
                                 <div className="createcom-input-group">
                                     <div className="createcom-input-field">
-                                        <textarea 
+                                        <input 
                                         type="text" 
                                         id="comment_text_a" 
                                         placeholder="Type comment here..." 
                                         {...register("comment_text_a")}>
-                                        </textarea>
+                                        </input>
                                     </div>
                                 </div>
 

@@ -22,7 +22,7 @@ export default function HomeNavBar() {
                     <div className="homenavbar-container">
                         <ul>
                             <li><a onClick={updatePage.bind(this, "Login")}>Home</a></li>
-                            <li><a onClick={updatePage.bind(this, "SearchCate")}>Search</a></li>
+                            {/* <li><a onClick={updatePage.bind(this, "SearchCate")}>Search</a></li> */}
                             <li style={{float: "right"}}><a>Logged In As: {pb.authStore.model.username}</a></li>
                         </ul>
                     </div>
