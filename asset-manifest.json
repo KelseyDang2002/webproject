@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/https//KelseyDang2002.github.io/react-gh-pages/static/css/main.2b77351c.css",
+    "main.js": "/https//KelseyDang2002.github.io/react-gh-pages/static/js/main.5f1651ad.js",
+    "index.html": "/https//KelseyDang2002.github.io/react-gh-pages/index.html",
+    "main.2b77351c.css.map": "/https//KelseyDang2002.github.io/react-gh-pages/static/css/main.2b77351c.css.map",
+    "main.5f1651ad.js.map": "/https//KelseyDang2002.github.io/react-gh-pages/static/js/main.5f1651ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b77351c.css",
+    "static/js/main.5f1651ad.js"
+  ]
+}
